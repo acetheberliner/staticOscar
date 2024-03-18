@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>Oscar Spiaggia - 298</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/solo-logo-trasp.png" />
+    <link rel="stylesheet" href="./styleCocktail.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="full-page">
+        <main>
+            <div class="container-fluid">
+                <div class="row nav">
+                    <nav class="navbar">
+                        <div class="logo col-12">
+                            <div class="col-2">
+                                <a href="/" class="rlink"><img src="./public/vect-white.svg" alt="Logo"
+                                        class="nav-logo" /></a>
+                            </div>
+                            <div class="col-4">
+                                <h1><a href="/" class="rlink">Oscar Spiaggia</a></h1>
+                            </div>
+                            <div class="col-3"></div>
+                            <div class="col-2">
+                                <button class="btn navbar-toggler alias" type="button" data-toggle="collapse"
+                                    data-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <i class="menu bi bi-list text-white"></i>
+                                </button>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </nav>
+                    <!--------->
+                    <div class="container">
+                        <div class="col-12">
+                            <hr class="nav" />
+                            <div class="collapse text-center m-2" id="navbarToggleExternalContent">
+                                <h4 class="text-white">Menù bar</h4>
+                                <div class="collapsed-navbar text-white p-2">
+                                    <div class="mario">
+                                        <div class="links">
+                                            <a href="./ristorante.html" class="rlink routerlink" >Ristorante</a>
+                                            <a href="./bar.html" class="rlink routerlink">Caffetteria</a>
+                                            <a href="./cantina.html" class="rlink routerlink">Cantina</a>
+                                            <a href="./cocktail.html" class="rlink routerlink">Cocktail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pager animate slide">
+                <div class="title">
+                    <h2 class="cocktailh2">Cocktail</h2>
+                </div>
+                <div class="image">
+                    <img src="./public/red.jpg" class="img1" alt="">
+                    <img class="tumb" src="./public/tumblr.jpg" alt="">
+                </div>
+                <button class="navbar-toggler alias1" type="button" data-toggle="collapse" data-target="#info" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <p class="attention text-white">!!! <i class="bi bi-info-circle text-white"></i> !!!</p>
+                </button>
+                <div id="info" class="collapse">
+                    <p class="text-white">* : in occasione di eventi speciali, i prezzi vengono calcolati differentemente. <br> Grazie per la comprensione.</p>
+                </div>
+                <div class="drink-list page animate slide delay-1">
+                    <PostDrink v-for="drink in datiDrink" :key="drink.iddrink" :drink="drink" />
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
