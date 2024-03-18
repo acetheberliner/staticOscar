@@ -68,10 +68,46 @@
                     <p class="attention text-white">!!! <i class="bi bi-info-circle text-white"></i> !!!</p>
                 </button>
                 <div id="info" class="collapse">
-                    <p class="text-white">* : in occasione di eventi speciali, i prezzi vengono calcolati differentemente. <br> Grazie per la comprensione.</p>
+                    <p class="special-prices text-white">* : in occasione di eventi speciali, i prezzi vengono calcolati differentemente. <br> Grazie per la comprensione.</p>
                 </div>
                 <div class="drink-list page animate slide delay-1">
-                    <PostDrink v-for="drink in datiDrink" :key="drink.iddrink" :drink="drink" />
+                    <!----------------------------------------------------------------------------->
+                    <div class="drink-single-one-bubble text-white">
+                        <div class="present">
+                            <h4 class="nome"><span class="drink-icon"><i class="cup-icon bi bi-cup-straw"></i></span> Negroni</h4>
+                            <h6 class="prezzo"><span class="precise">*</span> 9.00€</h6>
+                        </div>
+                        <div>
+                            <hr class="single-drink-hr">
+                            <p class="categoria">Aperitivo, Speziato</p>
+                            <p class="ingredienti">Gin, Vermouth Rosso, Campari + arancia</p>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------->
+                    <div class="drink-single-one-bubble text-white">
+                        <div class="present">
+                            <h4 class="nome"><span class="drink-icon"><i class="cup-icon bi bi-cup-straw"></i></span> Negraccio</h4>
+                            <h6 class="prezzo"><span class="precise">*</span> 9.00€</h6>
+                        </div>
+                        <div>
+                            <hr class="single-drink-hr">
+                            <p class="categoria">Aperitivo, Speziato</p>
+                            <p class="ingredienti">Gin, Vermouth Rosso, Campari + arancia</p>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------->
+                    <div class="drink-single-one-bubble text-white">
+                        <div class="present">
+                            <h4 class="nome"><span class="drink-icon"><i class="cup-icon bi bi-cup-straw"></i></span> Negretto</h4>
+                            <h6 class="prezzo"><span class="precise">*</span> 9.00€</h6>
+                        </div>
+                        <div>
+                            <hr class="single-drink-hr">
+                            <p class="categoria">Aperitivo, Speziato</p>
+                            <p class="ingredienti">Gin, Vermouth Rosso, Campari + arancia</p>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------->
                 </div>
             </div>
         </main>

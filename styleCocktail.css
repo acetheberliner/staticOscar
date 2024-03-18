@@ -164,6 +164,10 @@ p.attention {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
+p.details {
+    border: 1px solid transparent;
+}
+
 img.img1 {
     width: 200px;
     border: 1px solid transparent;
@@ -181,6 +185,7 @@ img.tumb {
     position: relative;
     z-index: 100;
     transform: translateX(-80px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .image {
@@ -191,12 +196,17 @@ img.tumb {
     margin-bottom: 120px;
 }
 
+i.cup-icon{
+    text-shadow: transparent 1px 0 10px;
+    color: #d6a103;
+}
+
 .drink-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.548);
-    width: 95%;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.452);
     border-radius: 20px;
     padding: 6px;
@@ -241,9 +251,25 @@ i{
     text-shadow: 2px 2px #ff0202;
 }
 
-p {
+p.special-prices, p.attention {
     border: 1px solid rgba(255, 0, 0, 0.384);
     background-color: rgba(255, 0, 0, 0.301);
+}
+
+div.drink-single-one-bubble{
+    border-radius: 20px;
+    border: 1px solid rgba(68, 67, 67, 0.075);
+    background-color: rgba(255, 255, 255, 0.712); /* Sfondo semi-trasparente */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 18px;
+    text-align: start;
+    vertical-align: middle;
+}
+
+p {
+
     border-radius: 20px;
     padding: 8px;
     text-align: center;
@@ -522,4 +548,60 @@ animation-delay: 2s;
   .animate {
     animation: none !important;
   }
+}
+
+hr.single-drink-hr{
+    border: 1px solid #4fa1ca;
+    border-radius: 20px;
+}
+
+h4 {
+    margin: 0;
+}
+
+h6.prezzo {
+    margin: 0;
+    margin-top: 4px;
+    color: #4fa1ca;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.present{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.categoria {
+    text-align: end;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #2c57a3;
+    font-style: italic;
+}
+
+.ingredienti{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c57a3;
+    line-height: normal;
+    text-align: start;
+ }
+
+ .nome {
+     font-weight: bold;
+     color: #2c57a3;
+     text-shadow: 1.5px 1.5px #4fa1ca;
+     font-weight: bolder;
+ }
+
+ .drink-icon{
+    color: #d6a103;
+    text-shadow: 1.5px 1.5px transparent;
+}
+
+.precise {
+    color:#2c57a3;
+    font-weight: bold;
 }
